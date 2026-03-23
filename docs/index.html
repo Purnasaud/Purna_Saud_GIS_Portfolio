@@ -18,7 +18,7 @@
 <div id="progress-bar"></div>
 
 <nav id="navbar">
-  <div class="nav-brand">Purna <span>Saud</span></div>
+  <div class="nav-brand">Purna <span>Saud</span><span style="color:var(--text);font-weight:400;"> | GIS Portfolio</span></div>
 
   <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
     <span></span>
@@ -79,19 +79,19 @@
       <div class="hero-projects-title">Highlighted Projects</div>
 
       <div class="hero-project-list">
-        <div class="hero-project-card" onclick="navigateTo('section-env')" style="cursor:pointer;">
+        <div class="hero-project-card" onclick="openDemo('Child Environmental Health Vulnerability','https://purnasaud.quarto.pub/cehi-gis-portfolio/')" style="cursor:pointer;">
           <div class="hero-project-type">Child Vulnerability Mapping</div>
           <div class="hero-project-name">A Geospatial Framework for Child Environmental Health Vulnerability: Chicago, IL </div>
           <div class="hero-project-desc"> Identifies high-risk child populations by integrating environmental exposure and social vulnerability indicators to support targeted public health interventions.</div>
         </div>
 
-     <div class="hero-project-card teal" onclick="navigateTo('section-env')" style="cursor:pointer;">
+     <div class="hero-project-card teal" onclick="openDemo('County Air Quality Explorer','https://purnasaud.github.io/county-air-quality-explorer/')" style="cursor:pointer;">
       <div class="hero-project-type">Air Quality & Health Exposure</div>
           <div class="hero-project-name">County Air Quality Explorer</div>
           <div class="hero-project-desc">Interactive web GIS platform integrating real-time AQI and historical emission trends data to analyze environmental exposure patterns and support health-focused decision-making.</div>
         </div>
 
-        <div class="hero-project-card violet" onclick="navigateTo('section-spatial')" style="cursor:pointer;">
+        <div class="hero-project-card violet" onclick="window.open('https://colab.research.google.com/drive/17MRDwWBALemw5NKvohDpls0x3O3JQh39?usp=sharing','_blank')" style="cursor:pointer;">
        <div class="hero-project-type">Spatial Accessibility Modeling</div>
           <div class="hero-project-name">Food Access Equity in Denver Metro Region</div>
           <div class="hero-project-desc">
@@ -780,7 +780,7 @@ Network-based spatial analysis identifies underserved communities with limited a
             <span class="sb-pill">Regression Analysis</span>
             <span class="sb-pill">Spatial Statistics</span>
             <span class="sb-pill">Exploratory Data Analysis (EDA)</span>
-            <span class="sb-pill">Geographically Weighted Regression (GWR)/span>
+            <span class="sb-pill">Geographically Weighted Regression (GWR)</span>
             <span class="sb-pill">Hypothesis Testing</span>
           </div>
         </div>
