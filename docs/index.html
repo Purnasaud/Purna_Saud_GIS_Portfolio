@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Purna Saud | GIS Portfolio</title>
+<meta name="description" content="Purna Saud | GIS Portfolio" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+<div id="progress-bar"></div>
+
+<nav id="navbar">
+  <div class="nav-brand">Purna <span>Saud</span></div>
+
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#hero" onclick="closeMenu()">Home</a></li>
+    <li><a href="#research" onclick="closeMenu()">Research</a></li>
+    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-photo-panel">
+        <img src="purna_photo.jpeg" alt="Purna Saud" class="hero-photo" />
+      </div>
+
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        Graduate Research Assistant · Environmental Health GIS & Spatial Analytics
+      </div>
+
+      <h1 class="hero-name">Purna Saud </h1>
+      <p class="hero-tagline">Turning Spatial Data into Public Health Insights</p>
+      <p class="hero-desc">
+        I develop and apply geospatial workflows and analytical methods to investigate environmental exposures, spatial inequities, and public health risk.
+      </p>
+
+      <div class="hero-social">
+       <a class="hero-social-link" href="https://mail.google.com/mail/?view=cm&to=purnasaud3@gmail.com" target="_blank" rel="noopener" title="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span>Email</span>
+        </a>
+        <a class="hero-social-link" href="https://github.com/Purnasaud" target="_blank" rel="noopener" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S9 17.44 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a class="hero-social-link" href="https://www.linkedin.com/in/purna-saud-78811520b/" target="_blank" rel="noopener" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <a class="hero-social-link hero-cv-btn" href="Purna_Saud_CV.pdf" download="Purna_Saud_CV.pdf" title="Download CV">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download CV</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-projects-title">Highlighted Projects</div>
+
+      <div class="hero-project-list">
+        <div class="hero-project-card" onclick="navigateTo('section-env')" style="cursor:pointer;">
+          <div class="hero-project-type">Child Vulnerability Mapping</div>
+          <div class="hero-project-name">A Geospatial Framework for Child Environmental Health Vulnerability: Chicago, IL </div>
+          <div class="hero-project-desc"> Identifies high-risk child populations by integrating environmental exposure and social vulnerability indicators to support targeted public health interventions.</div>
+        </div>
+
+     <div class="hero-project-card teal" onclick="navigateTo('section-env')" style="cursor:pointer;">
+      <div class="hero-project-type">Air Quality & Health Exposure</div>
+          <div class="hero-project-name">County Air Quality Explorer</div>
+          <div class="hero-project-desc">Interactive web GIS platform integrating real-time AQI and historical emission trends data to analyze environmental exposure patterns and support health-focused decision-making.</div>
+        </div>
+
+        <div class="hero-project-card violet" onclick="navigateTo('section-spatial')" style="cursor:pointer;">
+       <div class="hero-project-type">Spatial Accessibility Modeling</div>
+          <div class="hero-project-name">Food Access Equity in Denver Metro Region</div>
+          <div class="hero-project-desc">
+
+Network-based spatial analysis identifies underserved communities with limited access to healthy food resources, supporting equity-driven public health planning.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="section">
+  <div class="section-inner">
+    <div class="sec-hd">
+      <div class="sec-eye">Main Research Project</div>
+      <hr class="divider">
+      <h2 class="sec-title">
+        COVID-19 Mobility–Transmission Lead–Lag Analysis in Rural Wyoming
+      </h2>
+      <p class="sec-desc">
+        Spatiotemporal dynamics of human mobility and COVID-19 spread across Wyoming counties.
+      </p>
+    </div>
+
+    <div class="research-container">
+
+      <!-- LEFT: DESCRIPTION -->
+      <div class="research-description">
+
+        <div class="desc-section overview">
+          <h4>Overview</h4>
+          <p>
+            This study investigates how human mobility patterns are temporally linked to COVID-19 transmission dynamics across rural Wyoming counties. Using large-scale proprietary Advan Neighborhood mobility datasets alongside daily county-level COVID-19 case counts (2020–2023), the analysis examines dynamic lead–lag relationships between second-order behavioral and epidemiological signals.
+          </p>
+        </div>
+
+        <div class="desc-section question">
+          <h4>Research Question</h4>
+          <p>
+            How are human mobility patterns temporally linked to COVID-19 transmission dynamics across rural Wyoming counties, and what dynamic lead–lag relationships exist between second-order behavioral and epidemiological signals?
+          </p>
+        </div>
+
+        <div class="desc-section methods">
+          <h4>Methods</h4>
+          <p>
+            These signals are extracted using a continuous Morlet wavelet transform to capture dominant 7-, 14-, 21-, and 28-day periodic components, representing weekly to monthly patterns in mobility and reported infections.
+          </p>
+          <p>
+            To quantify temporal alignment, a constrained Dynamic Time Warping (DTW) approach was applied, allowing flexible alignment without assuming a fixed lag. From the DTW alignment path, key metrics—median lead–lag, normalized distance, and mobility-leading proportion—were computed across multiple periodic scales for pre- and post-Omicron periods.
+          </p>
+          <p>
+            These features were standardized and used in hierarchical clustering (Ward’s method) to identify groups of counties with similar mobility–transmission patterns.
+          </p>
+          <p>
+            To explain these spatiotemporal clusters, a statistical modeling framework was developed integrating county-level socioeconomic variables and mobility network metrics. Using exhaustive feature selection with Leave-One-Out Cross-Validation (LOOCV), the best-performing model achieved 87.0% accuracy and an AUC of 0.833.
+          </p>
+        </div>
+
+        <div class="desc-section findings">
+          <h4>Key Findings</h4>
+          <p>
+            Clear spatial heterogeneity was observed in mobility–transmission lead–lag structures across Wyoming counties. Several regions consistently exhibited mobility as a leading indicator of COVID-19 case increases, while others showed delayed or weak coupling patterns.
+          </p>
+          <p>
+            Hierarchical clustering revealed distinct spatial regimes of mobility and transmission interaction, indicating that counties do not respond uniformly to changes in human movement. These regimes reflect underlying differences in regional dynamics, including economic structure and mobility connectivity.
+          </p>
+          <p>
+            Statistical modeling identified the employment–population ratio, mining activity, and betweenness centrality as the primary drivers of cluster differentiation, highlighting the combined influence of socioeconomic conditions and the mobility network structure.
+          </p>
+          <p>
+            Bootstrap analysis (B = 1000) confirmed the robustness of these relationships, with consistent effects for employment and mining variables, whereas PageRank showed weaker and less stable effects across resampled models.
+          </p>
+        </div>
+
+        <div class="desc-section impact">
+          <h4>Impact &amp; Applications</h4>
+          <p>
+            This study provides a data-driven framework for understanding how mobility and disease transmission interact across rural regions, enabling the identification of spatial early-warning signals and supporting targeted public health monitoring and intervention strategies in underserved and environmentally vulnerable communities.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: RESULTS -->
+      <div class="research-results">
+        <h4 class="results-title">Results</h4>
+
+        <div class="research-results-scroll">
+          <div class="research-result-card">
+            <img src="MOVEMENT_Network.JPG" alt="County-level mobility network graph">
+            <p>County-level mobility network graph</p>
+          </div>
+
+          <div class="research-result-card">
+            <img src="Simplified Cluster Maps.png" alt="County-scale Spatial clustering patterns">
+            <p>County-scale Spatial clustering patterns</p>
+          </div>
+
+          <div class="research-result-card">
+            <img src="Albany_wavelet_power.png" alt="Wavelet-based temporal signal detection">
+            <p>Wavelet-based temporal signal detection</p>
+          </div>
+
+          <div class="research-result-card">
+            <img src="Albany_County_P21_W21_PRE_Overlay.png" alt="Regime Comparison of Mobility–COVID Temporal Lead–Lag Signals">
+            <p>Regime Comparison of Mobility–COVID Temporal Lead–Lag Signals</p>
+          </div>
+
+          <div class="research-result-card">
+            <img src="Albany_County_P21_W21_overlay_Z.png" alt="Periodic signal of movement and COVID signals">
+            <p>Periodic signal of movement and COVID signals</p>
+          </div>
+
+            <div class="research-result-card">
+    <img src="Top 10 Centrality.png" alt="Top 10 counties with highest betweenness centrality">
+    <p>Top 10 counties with highest betweenness centrality</p>
+  </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+<div id="section-env" class="proj-section" style="--t-accent:var(--teal);--t-lt:var(--teal-lt);">
+  <div class="theme-banner">
+    <div class="theme-banner-icon">🌿</div>
+    <div class="theme-banner-text">
+      <div class="theme-banner-num">Theme 01</div>
+      <div class="theme-banner-title">Environmental Health & Spatial Equity </div>
+    </div>
+    <div class="theme-banner-count">3 Projects</div>
+  </div>
+
+  <div style="padding:1.6rem var(--pad) 0;max-width:var(--max);margin:0 auto;">
+    <div class="sec-hd reveal">
+      <div class="sec-eye" style="color:var(--teal);">SPATIAL HEALTH ANALYTICS</div>
+      <hr class="divider" style="background:var(--teal);" />
+      <h2 class="sec-title">Mapping Vulnerability, Exposure & Healthcare Access </h2>
+      <p class="sec-desc">Integrated geospatial analysis of child environmental health vulnerability, air quality exposure, and healthcare accessibility across urban and rural regions. These projects combine demographic indicators, environmental monitoring data, and healthcare infrastructure to identify spatial inequities, quantify population risk, and support targeted, equity-focused public health interventions.</p>
+    </div>
+  </div>
+
+  <div class="proj-grid">
+    <div class="proj-card reveal" style="--card-accent:#20c997;--card-icon-bg:rgba(32,201,151,.12);">
+      <div class="proj-card-stripe"></div>
+      <div class="proj-card-header">
+        <div class="proj-card-meta">
+          <div class="proj-card-type">Environmental Health GIS</div>
+          <div class="proj-card-title">Child Environmental Health Vulnerability: Chicago, IL</div>
+        </div>
+      </div>
+
+      <div class="proj-card-body">
+        <p class="proj-card-desc">Composite child vulnerability mapping for Chicago neighborhoods.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">Quarto</span>
+          <span class="ptag">R</span>
+          <span class="ptag">Child Health</span>
+        </div>
+
+        <div class="proj-card-preview" onclick="openDemo('Child Environmental Health Vulnerability','https://purnasaud.quarto.pub/cehi-gis-portfolio/')">
+          <div class="proj-card-preview-inner">
+            <iframe src="https://purnasaud.quarto.pub/cehi-gis-portfolio/" loading="lazy" title="CEHI Chicago"></iframe>
+          </div>
+          <div class="proj-card-preview-overlay">
+            <div class="preview-play-btn">Open Demo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card-footer">
+        <button class="btn btn-teal btn-sm" onclick="openDemo('Child Environmental Health Vulnerability','https://purnasaud.quarto.pub/cehi-gis-portfolio/')">Live Demo</button>
+        <a class="btn btn-outline btn-sm" href="https://purnasaud.quarto.pub/cehi-gis-portfolio/" target="_blank" rel="noopener">Open</a>
+      </div>
+    </div>
+
+    <div class="proj-card reveal d1" style="--card-accent:#20c997;--card-icon-bg:rgba(32,201,151,.12);">
+      <div class="proj-card-stripe"></div>
+      <div class="proj-card-header">
+        <div class="proj-card-meta">
+          <div class="proj-card-type">Web GIS Application</div>
+          <div class="proj-card-title">County Air Quality Explorer</div>
+        </div>
+      </div>
+
+      <div class="proj-card-body">
+        <p class="proj-card-desc">Real-time county-level AQI explorer built with React and ArcGIS.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">React</span>
+          <span class="ptag">ArcGIS SDK</span>
+          <span class="ptag">EPA API</span>
+        </div>
+
+        <div class="proj-card-preview" onclick="openDemo('County Air Quality Explorer','https://purnasaud.github.io/county-air-quality-explorer/')">
+          <div class="proj-card-preview-inner">
+            <iframe src="https://purnasaud.github.io/county-air-quality-explorer/" loading="lazy" title="Air quality explorer"></iframe>
+          </div>
+          <div class="proj-card-preview-overlay">
+            <div class="preview-play-btn">Open Demo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card-footer">
+        <button class="btn btn-teal btn-sm" onclick="openDemo('County Air Quality Explorer','https://purnasaud.github.io/county-air-quality-explorer/')">Live Demo</button>
+
+        <a class="btn btn-outline btn-sm" href="https://purnasaud.github.io/county-air-quality-explorer/" target="_blank" rel="noopener">Open</a>
+
+        <button class="btn btn-outline btn-sm info-btn"
+         data-title="County Air Quality Explorer"
+         data-desc='
+         <div class="about-structured">
+            <div class="about-sec">
+              <h4>Overview</h4>
+              <p>Developed an interactive Web GIS application to analyze and visualize real-time air quality conditions and county-level emissions across the United States. The system integrates live EPA AirNow monitoring data with 2020 National Emissions Inventory (NEI) datasets to support spatial exploration of environmental exposure patterns at the county scale.</p>
+            </div>
+
+          <div class="about-sec">
+              <h4>Methodology</h4>
+               <p>Built a React-based geospatial application using the ArcGIS Maps SDK to integrate multiple data sources into a unified analytical interface. County boundaries were linked to emissions data using FIPS codes, while real-time AQI observations were dynamically queried and aggregated at the county level. Interactive pop-ups were designed to display contextual charts and metrics, enabling on-demand spatial analysis of environmental conditions.</p>
+          </div>
+
+          <div class="about-sec">
+              <h4>Tools &amp; Techniques</h4>
+             <p>ArcGIS Maps SDK for JavaScript, React, Chart.js, EPA AirNow API, 2020 NEI emissions data, Git, and GitHub Pages deployment.</p>
+          </div>
+
+          <div class="about-sec">
+        <h4>Results</h4>
+        <p>Enabled real-time visualization of air quality conditions across counties, integrated multi-source datasets into a single interactive platform, and developed dynamic pop-up charts showing AQI trends and emissions. The application improved user exploration through layer toggling, responsive UI design, and interactive map-based decision support.</p>
+          </div>
+
+          <div class="about-sec">
+        <h4>Implications</h4>
+        <p>This project demonstrates how Web GIS can support environmental health analysis by making complex air quality data accessible and interpretable. The framework can be extended to study exposure disparities, support public health decision-making, and inform environmental policy through spatially explicit insights.</p>
+         </div>
+        </div>'>
+          About
+        </button>
+      </div>
+    </div>
+
+    <div class="proj-card reveal d2" style="--card-accent:#20c997;--card-icon-bg:rgba(32,201,151,.12);">
+      <div class="proj-card-stripe"></div>
+      <div class="proj-card-header">
+        <div class="proj-card-meta">
+          <div class="proj-card-type">Narrative Mapping</div>
+          <div class="proj-card-title">Hospital Distribution in Wyoming Counties</div>
+        </div>
+      </div>
+
+      <div class="proj-card-body">
+        <p class="proj-card-desc">StoryMap highlighting hospital access gaps across Wyoming counties.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">StoryMaps</span>
+          <span class="ptag">HIFLD</span>
+          <span class="ptag">Health Equity</span>
+        </div>
+
+        <div class="proj-card-preview" onclick="openDemo('Hospital Distribution in Wyoming Counties','https://storymaps.arcgis.com/stories/2cd6d3fb6b364d7aa3669678ac49597a')">
+          <div class="proj-card-preview-inner">
+            <iframe src="https://storymaps.arcgis.com/stories/2cd6d3fb6b364d7aa3669678ac49597a" loading="lazy" title="Hospital StoryMap"></iframe>
+          </div>
+          <div class="proj-card-preview-overlay">
+            <div class="preview-play-btn">Open Demo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card-footer">
+        <button class="btn btn-teal btn-sm" onclick="openDemo('Hospital Distribution in Wyoming Counties','https://storymaps.arcgis.com/stories/2cd6d3fb6b364d7aa3669678ac49597a')">Live Demo</button>
+        <a class="btn btn-outline btn-sm" href="https://storymaps.arcgis.com/stories/2cd6d3fb6b364d7aa3669678ac49597a" target="_blank" rel="noopener">Open</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="section-spatial" class="proj-section" style="--t-accent:var(--violet);--t-lt:var(--violet-lt);background:var(--bg2);">
+  <div class="theme-banner">
+    <div class="theme-banner-icon">📐</div>
+    <div class="theme-banner-text">
+      <div class="theme-banner-num">Theme 02</div>
+      <div class="theme-banner-title">Spatial Analysis & Data Science </div>
+    </div>
+    <div class="theme-banner-count">3 Projects</div>
+  </div>
+
+  <div style="padding:1.6rem var(--pad) 0;max-width:var(--max);margin:0 auto;">
+    <div class="sec-hd reveal">
+      <div class="sec-eye" style="color:var(--violet);">Spatial Analysis · Quantitative Methods</div>
+      <hr class="divider" style="background:var(--violet);" />
+      <h2 class="sec-title">Advanced Spatial Methods </h2>
+      <p class="sec-desc">Advanced spatial modeling and geocomputational workflows integrating mobility data, environmental systems, and socioeconomic indicators to analyze human behavior, quantify spatial risk, and support data-driven decision-making in public health and disaster contexts.
+
+      </p>
+    </div>
+  </div>
+
+  <div class="proj-grid">
+    <div class="proj-card reveal" style="--card-accent:#6f42c1;--card-icon-bg:rgba(111,66,193,.12);">
+      <div class="proj-card-stripe"></div>
+      <div class="proj-card-header">
+        <div class="proj-card-meta">
+          <div class="proj-card-type">Spatial Statistics</div>
+          <div class="proj-card-title">SAR Modeling to Estimate Median Home Value</div>
+        </div>
+      </div>
+
+      <div class="proj-card-body">
+        <p class="proj-card-desc">Spatial autoregressive modeling of neighborhood home values.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">R</span>
+          <span class="ptag">SAR</span>
+          <span class="ptag">spdep</span>
+        </div>
+
+        <div class="proj-card-preview" onclick="openDemo('SAR Modeling to Estimate Median Home Value','https://purnasaud.quarto.pub/gist5050-sar-final/')">
+          <div class="proj-card-preview-inner">
+            <iframe src="https://purnasaud.quarto.pub/gist5050-sar-final/" loading="lazy" title="SAR project"></iframe>
+          </div>
+          <div class="proj-card-preview-overlay">
+            <div class="preview-play-btn">Open Demo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card-footer">
+        <button class="btn btn-violet btn-sm" onclick="openDemo('SAR Modeling to Estimate Median Home Value','https://purnasaud.quarto.pub/gist5050-sar-final/')">Live Demo</button>
+        <a class="btn btn-outline btn-sm" href="https://purnasaud.quarto.pub/gist5050-sar-final/" target="_blank" rel="noopener">Open</a>
+      </div>
+    </div>
+
+
+        <div class="proj-card reveal d3" style="--card-accent:#6f42c1;--card-icon-bg:rgba(111,66,193,.12);">
+      <div class="proj-card-stripe"></div>
+      <div class="proj-card-header">
+        <div class="proj-card-meta">
+          <div class="proj-card-type">Accessibility Modeling</div>
+          <div class="proj-card-title">Food Access Equity in Denver Metro Region</div>
+        </div>
+      </div>
+
+      <div class="proj-card-body">
+        <p class="proj-card-desc">Network-based food access analysis for underserved Denver communities.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">Python</span>
+          <span class="ptag">OSMnx</span>
+          <span class="ptag">Census</span>
+        </div>
+
+        <div class="proj-card-preview">
+          <div class="proj-card-preview-inner">
+            <img src="food_access_preview.jpg" alt="Food access equity preview">
+          </div>
+          <div class="proj-card-preview-overlay">
+            <div class="preview-play-btn">Open Colab</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card-footer">
+        <a class="btn btn-teal btn-sm" href="https://colab.research.google.com/drive/17MRDwWBALemw5NKvohDpls0x3O3JQh39?usp=sharing" target="_blank" rel="noopener">Open Colab</a>
+      </div>
+    </div>
+
+    
+
+    <div class="proj-card reveal d1" style="--card-accent:#6f42c1;--card-icon-bg:rgba(111,66,193,.12);">
+      <div class="proj-card-stripe"></div>
+      <div class="proj-card-header">
+        <div class="proj-card-meta">
+          <div class="proj-card-type">Disaster Analytics</div>
+          <div class="proj-card-title">Human Mobility During the 2022 Yellowstone Flood</div>
+        </div>
+      </div>
+
+      <div class="proj-card-body">
+        <p class="proj-card-desc">Mobility disruption analysis during the 2022 Yellowstone flood.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">Python</span>
+          <span class="ptag">GeoPandas</span>
+          <span class="ptag">NetworkX</span>
+        </div>
+
+        <div class="proj-card-preview">
+          <div class="proj-card-preview-inner">
+            <img src="yellowstone_preview.jpg" alt="Yellowstone flood project preview">
+          </div>
+          <div class="proj-card-preview-overlay">
+            <div class="preview-play-btn">Open GitHub</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card-footer">
+        <a class="btn btn-violet btn-sm" href="https://github.com/Purnasaud/human-mobility-dynamics-yellowstone-flood-2022" target="_blank" rel="noopener">GitHub</a>
+        <button class="btn btn-outline btn-sm info-btn"
+  data-title="Human Mobility During the 2022 Yellowstone Flood"
+  data-desc='
+    <div class="about-structured">
+      <div class="about-sec">
+        <h4>Overview</h4>
+        <p>This study investigates the spatiotemporal impacts of the 2022 Yellowstone flood on human mobility patterns and economic activity across six key locations in the Greater Yellowstone Region: Jackson, West Yellowstone, Cody, Yellowstone National Park, Gardiner, and Cooke City–Silver Gate, spanning Wyoming and Montana. Leveraging large-scale, proprietary mobility and consumer transaction datasets, the research quantifies behavioral responses to a major natural disaster by integrating geospatial analytics, time-series modeling, and data-driven visualization. The analysis incorporates Advan&#39;s proprietary datasets, including anonymized credit card transaction data and mobile device–derived human mobility data, alongside SafeGraph Points of Interest (POI) data classified using North American Industry Classification System (NAICS) codes. These datasets enable fine-grained tracking of daily visitation patterns, origin–destination flows, and sector-specific spending behavior before, during, and after the flood event.</p>
+      </div>
+      <div class="about-sec">
+        <h4>Methodology</h4>
+        <p>A comprehensive Python-based analytical pipeline was developed to preprocess, integrate, and analyze large-scale spatiotemporal data. Key tools include pandas for temporal aggregation and statistical analysis, geopandas for spatial data integration and geospatial joins, and NumPy and SciPy for numerical computation. High-resolution visualizations were generated using Matplotlib and Seaborn, while ArcGIS Pro and QGIS were used for advanced spatial mapping and cartographic outputs. Spatial analysis focused on linking census block groups to POI-level mobility flows, enabling the identification of regional mobility disruptions and recovery dynamics. Temporal analysis at daily and monthly resolutions captured both immediate shock responses, such as evacuation-driven mobility spikes, and longer-term economic impacts on tourism-dependent communities.</p>
+      </div>
+      <div class="about-sec">
+        <h4>Results &amp; Implications</h4>
+        <p>Results reveal a strong coupling between declines in mobility and reductions in economic activity in severely affected towns such as Gardiner and Cooke City, while larger regional centers, including Jackson and Cody, exhibited greater resilience. Sector-level analysis further highlights disproportionate impacts on accommodation, food services, and retail, underscoring structural vulnerabilities in tourism-driven economies. This research contributes to spatial health and environmental exposure science by demonstrating that mobility-derived behavioral indicators can serve as proxies for community resilience and economic vulnerability during extreme events. The findings provide actionable insights for disaster preparedness, public health response, and regional economic planning.</p>
+      </div>
+    </div>'>
+  About
+</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="section-applied" class="proj-section" style="--t-accent:var(--orange);--t-lt:var(--orange-lt);">
+  <div class="theme-banner">
+    <div class="theme-banner-icon">🛠️</div>
+    <div class="theme-banner-text">
+      <div class="theme-banner-num">Theme 03</div>
+      <div class="theme-banner-title">Applied GIS & Decision Support Systems</div>
+    </div>
+    <div class="theme-banner-count">3 Projects</div>
+  </div>
+
+  <div style="padding:1.6rem var(--pad) 0;max-width:var(--max);margin:0 auto;">
+    <div class="sec-hd reveal">
+      <div class="sec-eye">Applied GIS · Operational Tools</div>
+      <hr class="divider" />
+      <h2 class="sec-title">Operational GIS Systems & Decision Tools</h2>
+      <p class="sec-desc">I design and build GIS-based systems that support real-time data collection, spatial monitoring, and decision-making across public safety, environmental hazards, and urban systems. These workflows combine field data capture, live data integration (NEXRAD, NWS, USGS), and interactive web mapping (Leaflet, Shiny) to turn complex spatial data into clear, actionable insights. My focus is on creating tools that are intuitive to use, scalable, and reliable, with methods that can be applied to environmental health monitoring, exposure assessment, and community risk analysis.</p>
+    </div>
+  </div>
+
+  <div class="proj-grid">
+    <div class="proj-card reveal" style="--card-accent:#f4623a;--card-icon-bg:rgba(244,98,58,.12);">
+      <div class="proj-card-stripe"></div>
+      <div class="proj-card-header">
+        <div class="proj-card-meta">
+          <div class="proj-card-type">Field Data Collection</div>
+          <div class="proj-card-title">UW Campus Incident Reporting System</div>
+        </div>
+      </div>
+
+      <div class="proj-card-body">
+        <p class="proj-card-desc">Survey123 and dashboard workflow for campus incident reporting.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">Survey123</span>
+          <span class="ptag">ArcGIS Online</span>
+          <span class="ptag">Dashboards</span>
+        </div>
+
+        <div class="proj-card-preview" onclick="openDemo('UW Campus Incident Reporting System','https://survey123.arcgis.com/share/8a4c7ffca6374ad8854b0d69eb1ab7ad')">
+          <div class="proj-card-preview-inner">
+            <iframe src="https://survey123.arcgis.com/share/8a4c7ffca6374ad8854b0d69eb1ab7ad" loading="lazy" title="Survey123 system"></iframe>
+          </div>
+          <div class="proj-card-preview-overlay">
+            <div class="preview-play-btn">Open Demo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card-footer">
+        <button class="btn btn-primary btn-sm" onclick="openDemo('UW Campus Incident Reporting System','https://survey123.arcgis.com/share/8a4c7ffca6374ad8854b0d69eb1ab7ad')">Live Demo</button>
+        <a class="btn btn-outline btn-sm" href="https://survey123.arcgis.com/share/8a4c7ffca6374ad8854b0d69eb1ab7ad" target="_blank" rel="noopener">Open</a>
+
+        <button class="btn btn-outline btn-sm info-btn"
+          data-title="UW Campus Incident Reporting System"
+          data-desc="Developed and deployed a GIS-based incident reporting system using ArcGIS Survey123, enabling real-time collection of structured, georeferenced field data by non-GIS users. The system improves data consistency, reporting efficiency, and supports operational decision-making for campus safety monitoring.">
+          About
+        </button>
+
+      </div>
+    </div>
+
+    <div class="proj-card reveal d1" style="--card-accent:#f4623a;--card-icon-bg:rgba(244,98,58,.12);">
+      <div class="proj-card-stripe"></div>
+      <div class="proj-card-header">
+        <div class="proj-card-meta">
+          <div class="proj-card-type">Web Map</div>
+          <div class="proj-card-title">Unified Hazard Map — Weather & Earthquakes</div>
+        </div>
+      </div>
+
+      <div class="proj-card-body">
+        <p class="proj-card-desc">Combined hazard viewer for NWS alerts and USGS earthquake feeds.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">Leaflet</span>
+          <span class="ptag">NWS API</span>
+          <span class="ptag">USGS API</span>
+        </div>
+
+        <div class="proj-card-preview" onclick="openDemo('Unified Hazard Map','https://purnasaud.github.io/webgis-assignment4/bonus-combined/')">
+          <div class="proj-card-preview-inner">
+            <iframe src="https://purnasaud.github.io/webgis-assignment4/bonus-combined/" loading="lazy" title="Hazard map"></iframe>
+          </div>
+          <div class="proj-card-preview-overlay">
+            <div class="preview-play-btn">Open Demo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card-footer">
+        <button class="btn btn-primary btn-sm" onclick="openDemo('Unified Hazard Map','https://purnasaud.github.io/webgis-assignment4/bonus-combined/')">Live Demo</button>
+        <a class="btn btn-outline btn-sm" href="https://purnasaud.github.io/webgis-assignment4/bonus-combined/" target="_blank" rel="noopener">Open</a>
+
+        <button class="btn btn-outline btn-sm info-btn"
+        data-title="Unified Hazard Monitoring Dashboard"
+        data-desc="Developed an interactive web-based GIS application using Leaflet.js to integrate real-time environmental hazard data, including NEXRAD radar, NWS alerts, and USGS earthquake feeds. The platform enables dynamic visualization, multi-layer exploration, and intuitive interaction for monitoring and interpreting multi-hazard conditions in near real time.">
+        About</button>
+
+      </div>
+    </div>
+
+    <div class="proj-card reveal d2" style="--card-accent:#f4623a;--card-icon-bg:rgba(244,98,58,.12);">
+      <div class="proj-card-stripe"></div>
+      <div class="proj-card-header">
+        <div class="proj-card-meta">
+          <div class="proj-card-type">Spatial Dashboard</div>
+          <div class="proj-card-title">Crime Patterns in Washington, DC</div>
+        </div>
+      </div>
+
+      <div class="proj-card-body">
+        <p class="proj-card-desc">Interactive dashboard for crime trends and hotspot analysis in DC.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">R Shiny</span>
+          <span class="ptag">sf</span>
+          <span class="ptag">tmap</span>
+        </div>
+
+        <div class="proj-card-preview" onclick="openDemo('Crime Patterns in Washington, DC','https://dc-crime-trend.shinyapps.io/complete_final/')">
+          <div class="proj-card-preview-inner">
+            <iframe src="https://dc-crime-trend.shinyapps.io/complete_final/" loading="lazy" title="DC crime dashboard"></iframe>
+          </div>
+          <div class="proj-card-preview-overlay">
+            <div class="preview-play-btn">Open Demo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card-footer">
+        <button class="btn btn-primary btn-sm" onclick="openDemo('Crime Patterns in Washington, DC','https://dc-crime-trend.shinyapps.io/complete_final/')">Live Demo</button>
+        <a class="btn btn-outline btn-sm" href="https://dc-crime-trend.shinyapps.io/complete_final/" target="_blank" rel="noopener">Open</a>
+        
+        <button class="btn btn-outline btn-sm info-btn"
+  data-title="Crime Pattern Analysis & Interactive Mapping — Washington, D.C."
+  data-desc='
+    <div class="about-structured">
+      <div class="about-sec">
+        <h4>Overview</h4>
+        <p>Conducted a high-resolution spatiotemporal risk analysis of urban safety patterns across Washington, D.C. (2024), integrating incident-level data with census tract boundaries to quantify spatial disparities and temporal dynamics. The analysis applies geospatial methods to identify high-risk areas and support data-driven decision-making, with a transferable framework for environmental health risk mapping and spatial exposure analysis.</p>
+      </div>
+
+      <div class="about-sec">
+        <h4>Methodology</h4>
+        <p>Processed and spatially joined approximately 24,500 crime incidents to 206 census tracts, enabling geographically consistent analysis. Crime rates were normalized using ACS population data to generate per-capita metrics, ensuring comparability across heterogeneous regions. Temporal trends were analyzed through monthly aggregation, while spatial structures were examined using choropleth mapping, proportional symbol visualization, and K-means clustering to detect statistically similar high-risk clusters.</p>
+      </div>
+
+      <div class="about-sec">
+        <h4>Tools &amp; Techniques</h4>
+        <p>R, sf, tmap, ggplot2, Shiny, K-means clustering, choropleth mapping, proportional symbol mapping, spatial joins, and per-capita normalization.</p>
+      </div>
+
+      <div class="about-sec">
+        <h4>Results</h4>
+        <p>Identified distinct spatial clusters of elevated crime risk, particularly for theft-related offenses and robbery. Revealed strong temporal variability, with peak activity concentrated in mid-to-late year periods, and demonstrated that crime patterns exhibit non-random spatial concentration. The project also delivered an interactive Shiny platform for dynamic exploration of crime patterns across space, time, and categories.</p>
+      </div>
+
+      <div class="about-sec">
+        <h4>Implications</h4>
+        <p>This work demonstrates how geospatial analytics can transform raw incident data into actionable intelligence for decision-making. The framework supports targeted interventions, optimized resource allocation, and scalable spatial decision-support systems. Importantly, the same analytical approach is directly transferable to environmental health applications, including exposure assessment, vulnerability mapping, and spatial risk modeling.</p>
+      </div>
+    </div>'>
+  About
+</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="skills" class="section">
+  <div class="section-inner">
+    <div class="sec-hd reveal">
+      <div class="sec-eye">Technical Skills</div>
+      <hr class="divider" />
+      <h2 class="sec-title">Geospatial & Environmental Health Analytics Skills</h2>
+      <p class="sec-desc">
+        Spatial analysis, geospatial data management, reproducible research, and decision-support workflows for environmental health applications.
+      </p>
+    </div>
+
+    <div class="skills-layout-cehi">
+      <div class="skills-intro reveal">
+        <p class="skills-summary">
+         Reproducible geospatial workflows, scalable data pipelines, and analytical frameworks for environmental exposure assessment, spatial inequity analysis, and evidence-based public health research.
+        </p>
+      </div>
+
+      <div class="skills-blocks reveal d1">
+
+        <div class="skill-block">
+          <div class="sb-label">GIS & Spatial Analysis</div>
+          <div class="sb-pills">
+            <span class="sb-pill">ArcGIS Pro</span>
+            <span class="sb-pill">QGIS</span>
+            <span class="sb-pill">ArcGIS Online</span>
+            <span class="sb-pill">StoryMaps</span>
+            <span class="sb-pill">Spatial Joins</span>
+            <span class="sb-pill">Overlay Analysis (Vector & Raster)</span>
+            <span class="sb-pill">Proximity & Buffer Analysis</span>
+            <span class="sb-pill">Service Area & NetworkAnalysis</span>
+            <span class="sb-pill">Interpolation (IDW & Kriging)</span>
+            <span class="sb-pill">Zonal Statistics</span>
+            <span class="sb-pill">Geocoding</span>
+          </div>
+        </div>
+
+
+          <div class="skill-block">
+          <div class="sb-label">Public Health & Environmental Analytics</div>
+          <div class="sb-pills">
+            <span class="sb-pill">Time-Series Analysis</span>
+            <span class="sb-pill">Spatiotemporal Analysis</span>
+            <span class="sb-pill">Hotspot Analysis</span>
+            <span class="sb-pill">Cluster Analysis</span>
+            <span class="sb-pill">Spatial Inequity Analysis</span>
+            <span class="sb-pill">Vulnerability Mapping </span>
+            <span class="sb-pill">Exposure Assessment</span>
+            <span class="sb-pill">Risk Mapping</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="sb-label">Geospatial Data Management</div>
+          <div class="sb-pills">
+            <span class="sb-pill">Geospatial Databases</span>
+            <span class="sb-pill">Metadata Documentation</span>
+            <span class="sb-pill">Data Cleaning</span>
+            <span class="sb-pill">Data Dictionaries</span>
+            <span class="sb-pill">Attribute Standardization</span>
+            <span class="sb-pill">Data Validation</span>
+            <span class="sb-pill">Harmonization</span>
+            <span class="sb-pill">Batch Geocoding</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="sb-label">Programming & Automation</div>
+          <div class="sb-pills">
+            <span class="sb-pill">Python</span>
+            <span class="sb-pill">ArcPy</span>
+            <span class="sb-pill">Arcade</span>
+            <span class="sb-pill">Pandas</span>
+            <span class="sb-pill">GeoPandas</span>
+            <span class="sb-pill">Matplotlib</span>
+            <span class="sb-pill">scikit-learn</span>
+            <span class="sb-pill">R</span>
+            <span class="sb-pill">HTML</span>
+            <span class="sb-pill">CSS</span>
+            <span class="sb-pill">JavaScript</span>
+            <span class="sb-pill">Excel</span>
+            <span class="sb-pill">SQL</span>
+            <span class="sb-pill">Script Development</span>
+            <span class="sb-pill">Workflow Automation</span>
+            <span class="sb-pill">Batch Processing</span>
+            <span class="sb-pill">Geospatial Scripting</span>
+            <span class="sb-pill">Applied machine learning</span>
+            
+          </div>
+        </div>
+         
+        <div class="skill-block">
+          <div class="sb-label">Statistical & Data analysis</div>
+          <div class="sb-pills">
+            <span class="sb-pill">Regression Analysis</span>
+            <span class="sb-pill">Spatial Statistics</span>
+            <span class="sb-pill">Exploratory Data Analysis (EDA)</span>
+            <span class="sb-pill">Geographically Weighted Regression (GWR)/span>
+            <span class="sb-pill">Hypothesis Testing</span>
+          </div>
+        </div>
+
+
+      
+
+        <div class="skill-block">
+          <div class="sb-label">Visualization & Decision Support</div>
+          <div class="sb-pills">
+            <span class="sb-pill">Cartographic Design</span>
+            <span class="sb-pill">Maps</span>
+            <span class="sb-pill">Charts</span>
+            <span class="sb-pill">Tables &amp; Figures</span>
+            <span class="sb-pill">Dashboards</span>
+            <span class="sb-pill">Interactive Web Maps</span>
+            <span class="sb-pill">StoryMaps</span>
+            <span class="sb-pill">Shiny</span>
+            <span class="sb-pill">Technical Summaries</span>
+            <span class="sb-pill">Quarto</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="sb-label">Collaboration</div>
+          <div class="sb-pills">
+            <span class="sb-pill">Git</span>
+            <span class="sb-pill">GitHub</span>
+            <span class="sb-pill">Technical Writing</span>
+            <span class="sb-pill" >Overleaf</span>
+            <span class="sb-pill">Teamwork</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <div class="sb-label">Research Support</div>
+          <div class="sb-pills">
+            <span class="sb-pill">Data Sourcing</span>
+            <span class="sb-pill">Literature Review</span>
+            <span class="sb-pill">Reproducible Workflows</span>
+            <span class="sb-pill">Technical Writing & Publication</span>
+          </div>
+        </div>
+
+         <div class="skill-block">
+          <div class="sb-label">Soft Skills</div>
+          <div class="sb-pills">
+            <span class="sb-pill">Critical Thinking</span>
+            <span class="sb-pill">Communication</span>
+            <span class="sb-pill">Leadership</span>
+            <span class="sb-pill">Adaptability</span>
+             <span class="sb-pill">Project Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="section-inner">
+    <div class="sec-hd reveal">
+      <div class="sec-eye">About Me</div>
+      <hr class="divider" />
+      <h2 class="sec-title">Purna Saud</em></h2>
+
+    </div>
+
+   <div class="about-grid">
+  <div class="about-text reveal">
+
+    <div class="about-block">
+      <div class="about-block-icon">🎓</div>
+      <div class="about-block-content">
+        <div class="about-block-label">Education</div>
+        <p>I am a Graduate Research Assistant in the School of Computing at the University of Wyoming, pursuing a Master’s degree in Geospatial Information Science and Technology. I hold a Bachelor’s degree in Geomatics Engineering from Kathmandu University, Nepal.</p>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <div class="about-block-content">
+        <div class="about-block-label">Current Research</div>
+        <p>My current research examines the relationship between COVID-19 case dynamics and anonymized human mobility patterns at the county level, focusing on how movement behavior influences public health outcomes over time. This work has strengthened my interest in applying geospatial methods to study environmental exposures, spatial inequities, and population-level risk.</p>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <div class="about-block-content">
+        <div class="about-block-label">Analytical Approach</div>
+        <p>I work extensively with large-scale spatial and mobility datasets, developing structured workflows that integrate data processing, spatial analysis, and modeling into reproducible analytical pipelines. My approach emphasizes clarity, methodological rigor, and the ability to translate complex spatial data into insights that can inform public health research and decision-making.</p>
+      </div>
+    </div>
+
+    <div class="about-block">
+      
+      <div class="about-block-content">
+        <div class="about-block-label">Research Interests</div>
+        <p>My broader research interests lie at the intersection of environmental health, spatial analytics, and geocomputational modeling. I am particularly interested in using GIS and data-driven methods to better understand how environmental and social factors shape health outcomes across space.</p>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <div class="about-block-content">
+        <div class="about-block-label">Beyond Research</div>
+        <p>Outside of research and study, I enjoy hiking and spending time in natural environments. Being outdoors continues to shape how I think about landscapes, environmental systems, and the spatial patterns that connect them.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="contact-inner reveal">
+    <div class="sec-eye" style="justify-content:center;">Let’s Work Together</div>
+    <h2 class="contact-title">Get in Touch </h2>
+    <p class="contact-desc">
+      Seeking opportunities in environmental health GIS and spatial analytics where I can contribute to spatial data analysis, geospatial data management, and reproducible research to support public health and interdisciplinary research initiatives.
+    </p>
+
+    <div class="contact-links">
+      <a class="contact-link contact-link-icon" href="https://mail.google.com/mail/?view=cm&to=purnasaud3@gmail.com" target="_blank" rel="noopener" title="Send me an email on Gmail">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      </a>
+    </div>
+
+    <div class="contact-form-wrap reveal">
+      <div class="contact-form-grid">
+        <div class="contact-field">
+          <label class="contact-label">Full Name</label>
+          <input type="text" name="name" id="cf-name" class="contact-input" placeholder="Your full name" />
+        </div>
+        <div class="contact-field">
+          <label class="contact-label">Email Address</label>
+          <input type="email" name="email" id="cf-email" class="contact-input" placeholder="your@email.com" />
+        </div>
+      </div>
+      <div class="contact-field">
+        <label class="contact-label">Subject</label>
+        <input type="text" name="subject" id="cf-subject" class="contact-input" placeholder="GIS opportunity · Collaboration · Research" />
+      </div>
+      <div class="contact-field">
+        <label class="contact-label">Message</label>
+        <textarea name="message" id="cf-message" class="contact-input contact-textarea" placeholder="Tell me about the opportunity or project..."></textarea>
+      </div>
+      <div class="contact-form-footer">
+        <button class="contact-submit" id="cf-submit">
+          <span id="cf-btn-text">Send Message</span>
+          <span id="cf-btn-icon">→</span>
+        </button>
+        <div id="cf-status" class="cf-status"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">Purna Saud</div>
+  <div class="footer-links">
+    <a href="#hero">Home</a>
+    <a href="#research">Research</a>
+    <a href="#section-env">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 Purna Saud · GIS Portfolio</div>
+</footer>
+
+<div id="demo-modal">
+  <div class="demo-modal-header">
+    <div class="demo-modal-title" id="demo-title">Project Demo</div>
+    <div class="demo-modal-controls">
+      <a id="demo-open-link" class="btn btn-outline btn-sm" href="#" target="_blank" rel="noopener">Open in New Tab</a>
+      <button class="demo-modal-close" id="demo-close" aria-label="Close">✕</button>
+    </div>
+  </div>
+
+  <div class="demo-modal-body">
+    <div class="demo-loading" id="demo-loading">
+      <div class="loading-spinner"></div>
+      <div style="font-family:var(--font-sans);font-size:.85rem;color:var(--text2);">Loading project demo…</div>
+    </div>
+    <iframe id="demo-frame" src="" title="Project demo"></iframe>
+  </div>
+</div>
+
+<div id="info-modal">
+  <div class="info-box">
+    <h3 id="info-title"></h3>
+    <div id="info-desc"></div>
+    <button id="info-close" type="button">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
